@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #news-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #news-content {
+            white-space: nowrap;
+            animation: scrollNews 15s linear infinite;
+        }
+
+        @keyframes scrollNews {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="news-container">
+    <div id="news-content">
+        <!-- Add your news items here -->
+        <span class="news-item">Breaking News 1</span>
+        <span class="news-item">Breaking News 2</span>
+        <span class="news-item">Breaking News 3</span>
+        <!-- Add more news items as needed -->
+    </div>
+</div>
+
+<script>
+    // Optional: You can add more news items dynamically using JavaScript
+    // Example:
+    // var newsContainer = document.getElementById('news-content');
+    // var newsItem = document.createElement('span');
+    // newsItem.className = 'news-item';
+    // newsItem.textContent = 'Dynamic News Item';
+    // newsContainer.appendChild(newsItem);
+</script>
+
+</body>
+</html>
